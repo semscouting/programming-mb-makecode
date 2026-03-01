@@ -1,6 +1,6 @@
 {
   "name": "programmingmb",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Digital-only Programming Merit Badge extension: Button, PIR, LED, Buzzer.",
   "license": "MIT",
   "dependencies": {
