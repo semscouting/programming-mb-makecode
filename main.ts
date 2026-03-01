@@ -3,9 +3,8 @@
  * Inputs: Button, PIR
  * Outputs: LED, Buzzer
  */
-
-//% color=#0078D7 weight=100 icon="\uf11b"
-namespace ProgrammingMB {
+//% color="#0078D7" icon="\uf11b" block="Programming MB"
+namespace programmingmb {
     /** Read button state from a digital pin (true when HIGH). */
     //% block="button on %pin is pressed"
     //% group="Inputs"
@@ -37,8 +36,8 @@ namespace ProgrammingMB {
     /** Turn buzzer ON (fixed tone). */
     //% block="buzzer on %pin ON"
     //% group="Outputs"
-    export function buzzerOn(pin: DigitalPin): void {
-        pins.analogSetPitchPin(<AnalogPin><number>pin)
+    export function buzzerOn(pin: AnalogPin): void {
+        pins.analogSetPitchPin(pin)
         music.ringTone(1000)
     }
 
