@@ -1,0 +1,17 @@
+{
+  "name": "programming-mb",
+  "version": "0.0.1",
+  "description": "Digital-only Programming Merit Badge extension: Button, PIR, LED, Buzzer.",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*"
+  },
+  "files": [
+    "main.ts",
+    "README.md"
+  ],
+  "testFiles": [
+    "test.ts"
+  ],
+  "public": true
+}
