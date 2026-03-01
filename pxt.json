@@ -1,6 +1,6 @@
 {
   "name": "programmingmb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Digital-only Programming Merit Badge extension for micro:bit",
   "license": "MIT",
   "dependencies": {
@@ -9,8 +9,7 @@
   "files": [
     "main.ts",
     "inputs.ts",
-    "outputs.ts",
-    "README.md"
+    "outputs.ts"
   ],
   "testFiles": [
     "test.ts"
