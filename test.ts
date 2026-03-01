@@ -1,18 +1,16 @@
-const BUTTON = DigitalPin.P1
-const PIR = DigitalPin.P2
-const LED = DigitalPin.P13
-const BUZZER = DigitalPin.P0
+let buttonPin = DigitalPin.P1
+let pirPin = DigitalPin.P2
+let ledPin = DigitalPin.P13
+let buzzerPin = DigitalPin.P0
 
 basic.forever(function () {
-    const trigger = programmingmb.buttonPressed(BUTTON) || programmingmb.pirMotionDetected(PIR)
-
+    let trigger = programmingmb.buttonPressed(buttonPin) || programmingmb.pirMotionDetected(pirPin)
     if (trigger) {
-        programmingmb.ledOn(LED)
-        programmingmb.buzzerOn(BUZZER)
+        programmingmb.ledOn(ledPin)
+        programmingmb.buzzerOn(buzzerPin)
     } else {
-        programmingmb.ledOff(LED)
-        programmingmb.buzzerOff(BUZZER)
+        programmingmb.ledOff(ledPin)
+        programmingmb.buzzerOff(buzzerPin)
     }
-
     basic.pause(25)
 })

@@ -1,31 +1,11 @@
 # programming-mb-makecode
 
-MakeCode extension for a **digital-only** Programming Merit Badge kit.
+Programming Merit Badge MakeCode extension (digital-only).
 
-## Scope
+## Components
+- Inputs: Button, PIR
+- Outputs: LED, Buzzer
 
-Inputs:
-- Button
-- PIR
-
-Outputs:
-- LED
-- Buzzer
-
-Everything is ON/OFF to keep class time focused on coding.
-
-## Naming
-
-Extension namespace: `ProgrammingMB`
-
-## Core blocks/functions
-
-Inputs:
-- `buttonPressed(pin)`
-- `pirMotionDetected(pin)`
-
-Outputs:
-- `ledOn(pin)` / `ledOff(pin)`
-- `buzzerOn(pin)` / `buzzerOff(pin)`
-
-Students write the `if/else` logic directly.
+## Notes
+- Designed for beginner lessons with ON/OFF logic.
+- Students write `if/else` logic directly.
