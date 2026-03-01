@@ -1,7 +1,7 @@
-const BUTTON = ProgrammingMB.DigitalPin.P1
-const PIR = ProgrammingMB.DigitalPin.P2
-const LED = ProgrammingMB.DigitalPin.P13
-const BUZZER = ProgrammingMB.DigitalPin.P0
+const BUTTON = DigitalPin.P1
+const PIR = DigitalPin.P2
+const LED = DigitalPin.P13
+const BUZZER = DigitalPin.P0
 
 basic.forever(function () {
     const trigger = ProgrammingMB.buttonPressed(BUTTON) || ProgrammingMB.pirMotionDetected(PIR)
